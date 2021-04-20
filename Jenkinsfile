@@ -11,7 +11,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("nihak/nodeapp:${env.BUILD_NUMBER}")
+        app = docker.build("heenakasali/nodeapp:${env.BUILD_NUMBER}")
     }
 
     stage('Test image') {
